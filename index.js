@@ -26,7 +26,8 @@ var Icon = React.createClass({
 
 var icons = [
     {name:"OA"},
-    {name:"ERP"}
+    {name:"ERP"},
+    {name:"LMS"}
 ];
 
 var Content = React.createClass({

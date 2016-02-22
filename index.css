@@ -35,19 +35,25 @@
     top: 50px;
     bottom: 30px;
     left: 0;
+    padding: 10px 0px;
 }
 
 .icon{
+    margin-left: 20px;
     display: inline-block;
-    background: url("img/icon.jpg") no-repeat;
-    height: 150px;
-    width: 50%;
+    background: url("img/icon.png") no-repeat;
+    height: 70px;
+    width: 25%;
 }
 
 #OA{
-    background-position: -10px -20px;
+    background-position: 0px 0px;
 }
 
 #ERP{
-    background-position: -160px -20px;
+    background-position: -75px 0px;
+}
+
+#LMS{
+    background-position: -155px 0px;
 }
