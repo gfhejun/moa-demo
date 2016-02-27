@@ -35,11 +35,11 @@
     top: 50px;
     bottom: 30px;
     left: 0;
-    padding: 10px 0px;
 }
 
 .icon{
     margin-left: 20px;
+    margin-top: 30px;
     display: inline-block;
     background: url("img/icon.png") no-repeat;
     height: 70px;
@@ -55,5 +55,13 @@
 }
 
 #LMS{
-    background-position: -155px 0px;
+    background-position: -155px 5px;
+}
+
+#AMS{
+    background-position: -250px 0px;
+}
+
+#HGB{
+    background-position: -5px -75px;
 }

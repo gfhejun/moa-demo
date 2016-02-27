@@ -17,9 +17,13 @@ var Footer = React.createClass({
 });
 
 var Icon = React.createClass({
+    handleOnClick: function () {
+        console.log(this.props.id);
+    },
+
     render: function () {
         return <span>
-            <div id={this.props.id} className="icon"></div>
+            <div id={this.props.id} className="icon" onClick={this.handleOnClick}></div>
         </span>
     }
 });
@@ -27,14 +31,16 @@ var Icon = React.createClass({
 var icons = [
     {name:"OA"},
     {name:"ERP"},
-    {name:"LMS"}
+    {name:"LMS"},
+    {name:"AMS"},
+    {name:"HGB"}
 ];
 
-var Content = React.createClass({
+var Squared = React.createClass({
     render: function () {
         return <div className="content">
             {
-                icons.map(function(icon){
+                this.props.datas.map(function(icon){
                     return <Icon key={icon.name} id={icon.name}/>
                 })
             }
@@ -52,6 +58,6 @@ ReactDOM.render(
     document.getElementById("footer")
 );
 ReactDOM.render(
-    <Content title="Content"/>,
+    <Squared datas={icons}/>,
     document.getElementById("content")
 );
