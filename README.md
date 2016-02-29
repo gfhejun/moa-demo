@@ -1,5 +1,4 @@
 # moa-demo
-try to use reactjs to develop an application
 
 How to run it:
 
@@ -9,7 +8,7 @@ How to run it:
 
 3、type "npm start";
 
-4、open the browser,type the url "http://localhost:3000";
+4、open the browser and visit "http://localhost:3000";
 
 Success!
 
