@@ -41,7 +41,7 @@
     margin-left: 20px;
     margin-top: 30px;
     display: inline-block;
-    background: url("img/icon.png") no-repeat;
+    background: url("../../img/icon.png") no-repeat;
     height: 70px;
     width: 25%;
 }

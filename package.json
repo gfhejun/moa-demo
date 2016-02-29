@@ -1,0 +1,47 @@
+{
+  "name": "moa-demo",
+  "version": "1.0.0",
+  "description": "try to use requirejs and reactjs to develop an application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlyforhebe/moa-demo.git"
+  },
+  "keywords": [
+    "moa",
+    "react",
+    "webpack"
+  ],
+  "author": "onlyforhebe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlyforhebe/moa-demo/issues"
+  },
+  "homepage": "https://github.com/onlyforhebe/moa-demo#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.0",
+    "cross-env": "^1.0.7",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.2.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.1.0",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.4",
+    "file-loader": "^0.8.5",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.7.1"
+  }
+}
