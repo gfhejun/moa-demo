@@ -17,31 +17,59 @@
     height: 30px;
 }
 
-.footer{
-    height: 30px;
-    font-size: 25px;
-    text-align: center;
-    background-color: cornsilk;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 5px;
-}
-
 .content{
     width: 100%;
-    position: fixed;
-    top: 50px;
-    bottom: 30px;
-    left: 0;
+    margin-top: 50px;
 }
 
+.icon{
+    width: 50%;
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+}
+
+.image{
+    height: 100px;
+}
+
+.title{
+    width:100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#OA{
+    background: url("../../img/1.png") no-repeat center;
+    background-size: contain;
+}
+
+#ERP{
+    background: url("../../img/2.png") no-repeat center;
+    background-size: contain;
+}
+
+#LMS{
+    background: url("../../img/3.png") no-repeat center;
+    background-size: contain;
+}
+
+#AMS{
+    background: url("../../img/4.png") no-repeat center;
+    background-size: contain;
+}
+
+#CRM{
+    background: url("../../img/5.png") no-repeat center;
+    background-size: contain;
+}
+
+/** spirit
 .icon{
     margin-left: 20px;
     margin-top: 30px;
     display: inline-block;
-    background: url("../../img/icon.png") no-repeat;
+    background: url("../../img/spirit.png") no-repeat;
     height: 70px;
     width: 25%;
 }
@@ -62,6 +90,7 @@
     background-position: -250px 0px;
 }
 
-#HGB{
+#CRM{
     background-position: -5px -75px;
 }
+*/

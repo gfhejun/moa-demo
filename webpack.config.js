@@ -6,10 +6,10 @@ module.exports = {
     entry: [
         'eventsource-polyfill', // necessary for hot reloading with IE
         'webpack-hot-middleware/client',
-        './js/home/index.js'
+        './js/home/home.js'
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
         publicPath: '/build/'
     },
@@ -31,7 +31,7 @@ module.exports = {
             },
             {
                 test: /\.png$/,
-                loader: 'file',
+                loader: 'url?limit=8192',
                 include: path.join(__dirname, 'img')
             }
         ]

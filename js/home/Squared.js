@@ -6,7 +6,7 @@ var icons = [
     {name: "ERP"},
     {name: "LMS"},
     {name: "AMS"},
-    {name: "HGB"}
+    {name: "CRM"}
 ];
 
 class Icon extends React.Component {
@@ -19,9 +19,15 @@ class Icon extends React.Component {
     }
 
     render() {
-        return <span>
-            <div id={this.props.id} className="icon" onClick={this.handleOnClick.bind(this)}></div>
-        </span>
+        return (
+            <div className="icon" onClick={this.handleOnClick.bind(this)}>
+                <div
+                    id={this.props.id}
+                    className="image">
+                </div>
+                <div className="title">{this.props.id}</div>
+            </div>
+        )
     }
 }
 
@@ -31,13 +37,15 @@ class Squared extends React.Component {
     }
 
     render() {
-        return <div className="content">
-            {
-                icons.map(function (icon) {
-                    return <Icon key={icon.name} id={icon.name}/>
-                })
-            }
-        </div>
+        return (
+            <div className="content">
+                {
+                    icons.map(function (icon) {
+                        return <Icon key={icon.name} id={icon.name}/>
+                    })
+                }
+            </div>
+        )
     }
 }
 
