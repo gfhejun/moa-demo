@@ -13,10 +13,6 @@ var icons = [
 ];
 
 class Icon extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Link className="icon" to={this.props.id}>
@@ -31,10 +27,6 @@ class Icon extends React.Component {
 }
 
 class Squared extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="content">
