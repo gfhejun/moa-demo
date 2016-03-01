@@ -6,7 +6,7 @@ module.exports = {
     entry: [
         'eventsource-polyfill', // necessary for hot reloading with IE
         'webpack-hot-middleware/client',
-        './js/home/home.js'
+        './js/home/Router.js'
     ],
     output: {
         path: path.join(__dirname, 'build'),
@@ -22,12 +22,12 @@ module.exports = {
             {
                 test: /\.jsx?/,
                 loaders: ['babel'],
-                include: path.join(__dirname, 'js/home')
+                include: path.join(__dirname, 'js')
             },
             {
                 test: /\.css$/,
                 loader: 'style!css',
-                include: path.join(__dirname, 'css/home')
+                include: path.join(__dirname, 'css')
             },
             {
                 test: /\.png$/,

@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link} from 'react-router';
+
+import ERP from '../erp/ERP';
 
 var icons = [
     {name: "OA"},
@@ -14,19 +17,15 @@ class Icon extends React.Component {
         super(props);
     }
 
-    handleOnClick() {
-        console.log(this.props.id);
-    }
-
     render() {
         return (
-            <div className="icon" onClick={this.handleOnClick.bind(this)}>
+            <Link className="icon" to={this.props.id}>
                 <div
                     id={this.props.id}
                     className="image">
                 </div>
                 <div className="title">{this.props.id}</div>
-            </div>
+            </Link>
         )
     }
 }
