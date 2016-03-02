@@ -2,39 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router';
 
-import ERP from '../erp/ERP';
-
-var icons = [
-    {name: "OA"},
-    {name: "ERP"},
-    {name: "LMS"},
-    {name: "AMS"},
-    {name: "CRM"}
-];
-
-class Icon extends React.Component {
+class Item extends React.Component {
     render() {
         return (
-            <Link className="icon" to={this.props.id}>
+            <Link className="item" to={this.props.id}>
                 <div
                     id={this.props.id}
-                    className="image">
+                    className="item-image">
                 </div>
-                <div className="title">{this.props.id}</div>
+                <div className="item-title">{this.props.name}</div>
             </Link>
         )
     }
 }
 
 class Squared extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <div className="content">
-                {
-                    icons.map(function (icon) {
-                        return <Icon key={icon.name} id={icon.name}/>
-                    })
-                }
+            <div className={this.props.className}>
+        {
+            this.props.items.map(function(icon) {
+                return <Item key={icon.id} id={icon.id} name={icon.name}/>
+            })
+        }
             </div>
         )
     }
