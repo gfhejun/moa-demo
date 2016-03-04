@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Header from '../home/Header';
 
 require('../../css/erp/erp.css');
@@ -79,7 +78,7 @@ class Notification extends React.Component{
     render(){
         return(
             <div>
-                <Header title="消息通知" type="Other"/>
+                <Header title="消息通知" type="Other" back="erp"/>
                 <NotificationList className="main-content erp-list" notifications={notifications}/>
             </div>
         )

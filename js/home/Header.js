@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {Link} from 'react-router';
 
 class Header extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class Header extends React.Component {
         }else{
             return (
                 <div className="header">
-                    <div className="header-back">返回</div>
+                    <Link className="header-back" to={this.props.back}>返回</Link>
                     <div className="header-title">{this.props.title}</div>
                 </div>
             )

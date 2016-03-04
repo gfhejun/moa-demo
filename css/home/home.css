@@ -19,7 +19,7 @@
     position: absolute;
     font-size: 25px;
     display: inline-block;
-    left: 42%;
+    left: 40%;
     text-align: center;
 }
 
@@ -29,6 +29,7 @@
     position: absolute;
     display: inline-block;
     left: 8%;
+    color: white;
 }
 
 .header-logout{

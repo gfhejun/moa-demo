@@ -13,7 +13,7 @@ class ERP extends React.Component{
     render(){
         return(
             <div>
-                <Header title="ERP" type="other"/>
+                <Header title="ERP" type="other" back="/"/>
                 <Squared className="main-content" items={items}/>
             </div>
         )
