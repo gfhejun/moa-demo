@@ -26,13 +26,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style!css',
-                include: path.join(__dirname, 'css')
+                loader: 'style!css'
             },
             {
                 test: /\.png$/,
-                loader: 'url?limit=8192',
-                include: path.join(__dirname, 'img')
+                loader: 'url?limit=8192'
+            },
+            {
+                test: /\.(eot|woff|woff2|svg|ttf)$/,
+                loader: "file-loader"
             }
         ]
     }
