@@ -8,36 +8,26 @@
     background-color: cornflowerblue;
     position: fixed;
     top: 0;
-    color: white;
-    padding: 10px 5px;
-    left: 0;
     width: 100%;
-    height: 30px;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    left: 0;
 }
 
 .header-title{
-    position: absolute;
     font-size: 25px;
-    display: inline-block;
-    left: 40%;
     text-align: center;
 }
 
 .header-back{
-    margin-top: 5px;
     font-size: 20px;
-    position: absolute;
-    display: inline-block;
-    left: 8%;
     color: white;
 }
 
 .header-logout{
-    margin-top: 5px;
     font-size: 20px;
-    position: absolute;
-    display: inline-block;
-    left: 78%;
+    text-align: center;
 }
 
 .main-content{
@@ -91,34 +81,3 @@ a{
     background: url("../../img/5.png") no-repeat center;
     background-size: contain;
 }
-
-/** spirit
-.icon{
-    margin-left: 20px;
-    margin-top: 30px;
-    display: inline-block;
-    background: url("../../img/spirit.png") no-repeat;
-    height: 70px;
-    width: 25%;
-}
-
-#OA{
-    background-position: 0px 0px;
-}
-
-#ERP{
-    background-position: -75px 0px;
-}
-
-#LMS{
-    background-position: -155px 5px;
-}
-
-#AMS{
-    background-position: -250px 0px;
-}
-
-#CRM{
-    background-position: -5px -75px;
-}
-*/

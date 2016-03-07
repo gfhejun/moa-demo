@@ -1,21 +1,32 @@
 import React from 'react';
 import {Link} from 'react-router';
+require("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 class Header extends React.Component {
     render() {
         var type = this.props.type;
-        if (type == 'Home'){
-            return(
-                <div className="header">
-                    <div className="header-title">{this.props.title}</div>
-                    <div className="header-logout">退出</div>
+        if (type == 'Home') {
+            return (
+                <div className="container-fluid header">
+                    <div className="row">
+                        <div className="col-xs-3"></div>
+                        <div className="col-xs-6 header-title">{this.props.title}</div>
+                        <div className="col-xs-3 header-logout">登出</div>
+                    </div>
                 </div>
             )
-        }else{
+        } else {
             return (
-                <div className="header">
-                    <Link className="header-back" to={this.props.back}>返回</Link>
-                    <div className="header-title">{this.props.title}</div>
+                <div className="container-fluid header">
+                    <div className="row">
+                        <div className="col-xs-3">
+                            <Link to={this.props.back}>
+                                <span className="glyphicon glyphicon-menu-left header-back" aria-hidden="false"></span>
+                            </Link>
+                        </div>
+                        <div className="col-xs-6 header-title">{this.props.title}</div>
+                        <div className="col-xs-3"></div>
+                    </div>
                 </div>
             )
         }
