@@ -9,21 +9,21 @@
     font-size: 18px;
 }
 
-.erp-title{
+.notification-title{
     text-align: center;
     padding: 5px 0;
 }
 
-.erp-content{
+.notification-content{
     padding: 5px 0;
 }
 
-.erp-author{
+.notification-author{
     text-align: right;
     padding: 5px 0;
 }
 
-.erp-date{
+.notification-date{
     text-align: right;
     padding: 5px 0;
 }

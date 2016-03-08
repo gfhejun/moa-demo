@@ -38,10 +38,10 @@ class NotificationItem extends React.Component{
     render(){
         return(
             <div className="erp-notification">
-                <div className="erp-title">{this.props.title}</div>
-                <div className="erp-content">{this.props.content}</div>
-                <div className="erp-author">{this.props.author}</div>
-                <div className="erp-date">{this.props.date}</div>
+                <div className="notification-title">{this.props.title}</div>
+                <div className="notification-content">{this.props.content}</div>
+                <div className="notification-author">{this.props.author}</div>
+                <div className="notification-date">{this.props.date}</div>
             </div>
         )
     }
