@@ -3,11 +3,11 @@ import Header from './Header';
 import Squared from './Squared';
 
 var items = [
-    {id:"oa",name: "OA"},
-    {id:"erp",name: "ERP"},
-    {id:"lms",name: "LMS"},
-    {id:"ams",name: "AMS"},
-    {id:"crm",name: "CRM"}
+    {id:"oa",name:"OA",url:"oa"},
+    {id:"erp",name:"ERP",url:"erp"},
+    {id:"lms",name:"LMS",url:"lms"},
+    {id:"ams",name:"AMS",url:"ams"},
+    {id:"crm",name:"CRM",url:"crm"}
 ];
 
 class Home extends React.Component{
