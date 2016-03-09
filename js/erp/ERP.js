@@ -4,8 +4,8 @@ import Header from '../home/Header';
 import Squared from '../home/Squared';
 
 var items = [
-    {id:"notification",name: "消息提醒"},
-    {id:"vacation",name: "休假申请"}
+    {id:"notification",name: "消息提醒",url:"notification"},
+    {id:"vacation",name: "休假申请",url:"vacation"}
 ];
 
 class ERP extends React.Component{

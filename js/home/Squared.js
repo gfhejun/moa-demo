@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 class Item extends React.Component {
     render() {
         return (
-            <Link className="item" to={this.props.id}>
+            <Link className="item" to={this.props.url}>
                 <div
                     id={this.props.id}
                     className="item-image">
@@ -25,7 +25,7 @@ class Squared extends React.Component {
             <div className={this.props.className}>
         {
             this.props.items.map(function(icon) {
-                return <Item key={icon.id} id={icon.id} name={icon.name}/>
+                return <Item key={icon.id} id={icon.id} name={icon.name} url={icon.url}/>
             })
         }
             </div>
