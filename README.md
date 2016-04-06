@@ -1,16 +1,13 @@
 # moa-demo
 
-How to run it:
+运行：
 
-1、cd to the root dir of this project;
+1、npm install;
 
-2、type "npm install";
+2、npm start
 
-3、type "npm start";
+3、访问url：http://localhost:3000;
 
-4、open the browser and visit "http://localhost:3000";
 
-Success!
-
-Then the server will auto reload after you edit some files and save them.
+由于在项目里使用了webpack的react热部署组件，因此支持修改源代码并保存后页面自动刷新。
 
